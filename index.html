@@ -10,22 +10,41 @@
   <!-- Custom styles -->
   <link href="styles.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100">
+<body class="bg-indigo-100">
 
   <!-- Navbar -->
-  <nav class="bg-gray-800 text-white py-4">
+  <nav class="bg-purple-800 text-white py-4">
     <div class="container mx-auto flex justify-between items-center">
-        <div class="text-2xl font-bold">BVS KARTHIK</div>
+        <div>
+            <!-- Profile Picture -->
+            <div class="h-20 w-20 rounded-full overflow-hidden">
+                <img src="New_Profile_Pic.png" alt="Profile Picture">
+            </div>
+        </div>
         <!-- Sections in the navigation bar -->
-        <div class="space-x-6">
-            <a href="#about" class="nav-link hover-bold">About</a>
-            <a href="#experience" class="nav-link hover-bold">Experience</a>
-            <a href="#projects" class="nav-link hover-bold">Projects</a>
-            <a href="#skills" class="nav-link hover-bold">Skills</a>
-            <a href="#contact" class="nav-link hover-bold">Contact</a>
+        <div class="flex justify-center w-full items-center">
+            <div class="space-x-6 flex items-center">
+                <a href="#about" class="nav-link hover-bold rounded-full bg-indigo-800 px-4 py-2">About</a>
+                <a href="#experience" class="nav-link hover-bold rounded-full bg-indigo-800 px-4 py-2">Experience</a>
+                <a href="#projects" class="nav-link hover-bold rounded-full bg-indigo-800 px-4 py-2">Projects</a>
+                <a href="#skills" class="nav-link hover-bold rounded-full bg-indigo-800 px-4 py-2">Skills</a>
+                <a href="#certifications" class="nav-link hover-bold rounded-full bg-indigo-800 px-4 py-2">Certifications</a>
+                <a href="mailto:bvskarthik18@gmail.com" class="text-white hover:text-gray-400 mr-8">
+                  <i class="fab fa-google" style="font-size: 24px;"></i>
+                </a>              
+                <a href="https://www.linkedin.com/in/bvs-karthik-70a5821b5" class="text-white hover:text-gray-800 mr-8 ">
+                    <i class="fab fa-linkedin" style="font-size: 24px;"></i>
+                </a>
+                <a href="https://github.com/bvskarthik18" class="text-white hover:text-gray-400 mr-4 ">
+                    <i class="fab fa-github" style="font-size: 24px;"></i>
+                </a>
+            </div>
         </div>
     </div>
 </nav>
+
+
+
 
 
   <!-- About Section -->
@@ -34,7 +53,7 @@
         <h2 class="text-3xl font-bold mb-8 text-center">About</h2>
         <div class="max-w-6xl mx-auto">
             <div class="blinking-box bg-green-100 p-6 rounded-lg">
-                <p class="text-lg text-gray-700">
+                <p class=" text-gray-700">
                     Experienced AWS Cloud Engineer specialized in designing and maintaining resilient cloud infrastructure. Proficient in leveraging a variety of AWS services like EC2, S3, Lambda, among others, and integrating DevOps tools such as Docker, Kubernetes, Terraform, and Jenkins.
                     Demonstrated expertise in automating workflows, optimizing performance, and ensuring robust security within dynamic cloud environments. Collaborative team player committed to enhancing DevOps methodologies for successful project deliveries and streamlined operations.
                 </p>
@@ -191,14 +210,15 @@
     <div class="container mx-auto text-center">
         <h2 class="text-3xl font-bold mb-8">Contact</h2>
         <!-- Add a contact form here -->
-        <form>
-          <input type="text" placeholder="Name" class="block w-full px-4 py-3 mb-4 rounded-md bg-gray-700">
-          <input type="email" placeholder="Email" class="block w-full px-4 py-3 mb-4 rounded-md bg-gray-700">
-          <textarea placeholder="Message" class="block w-full px-4 py-3 mb-4 rounded-md bg-gray-700"></textarea>
+        <form method="post" action="send_email.php">
+          <input type="text" name="name" placeholder="Name" class="block w-full px-4 py-3 mb-4 rounded-md bg-gray-700">
+          <input type="email" name="email" placeholder="Email" class="block w-full px-4 py-3 mb-4 rounded-md bg-gray-700">
+          <textarea name="message" placeholder="Message" class="block w-full px-4 py-3 mb-4 rounded-md bg-gray-700"></textarea>
           <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-md">Send</button>
         </form>
-      </div>
-  </section>
+    </div>
+</section>
+
 
   <!-- After the Contact Section -->
 
@@ -206,7 +226,7 @@
 <!-- After the Contact Section -->
 
 <!-- Footer Section -->
-<footer class="bg-gray-800 text-white py-8">
+<footer class="bg-purple-800 text-white py-8">
   <div class="container mx-auto flex justify-between items-center">
       <div class="flex items-center">
           <!-- Social Links -->
@@ -227,7 +247,7 @@
               <span>Mobile: +91 7036940280</span>
           </div>
       </div>
-      <p>&copy; 2023 Your Name</p> <!-- Update with your name or organization -->
+      <p>&copy; 2023 BVS KARTHIK</p> <!-- Update with your name or organization -->
   </div>
 </footer>
 
