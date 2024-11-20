@@ -90,7 +90,7 @@ header {
 
 .angle-down-icon {
   position: absolute;
-  bottom: -5%;        /* Position from the bottom */
+  bottom: -2%;        /* Position from the bottom */
   left: 50%;          /* Center horizontally */
   transform: translate(-50%, -50%);  /* Fine-tune the position */
   font-size: 3rem;    /* Increase font size for better visibility */
