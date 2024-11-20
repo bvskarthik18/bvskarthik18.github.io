@@ -1,3 +1,4 @@
+
 <html lang="en">
 
 <head>
@@ -5,6 +6,7 @@
   <link rel="stylesheet" href="./style.css" />
   <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700,300|Quattrocento" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
   <link rel="shortcut icon" href="./img/fbavatar_1630400663387_6838396024049256103.png" type="image/x-icon">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -15,13 +17,14 @@
     <nav class="navbar">
       <div class="navbar-container container">
         <div>
-          <h1 class="navbar-brand">BVS KARTHIK</h1>
+          
         </div>
         <ul class="menu-items">
+          <li><a href="#home-page">Home</a></li></li>
           <li><a href="#about">About</a></li>
           <li><a href="#about">Skills</a></li>
-          <li><a href="#my-works">Portfolio</a></li>
-          <li><a href="#contact-me">Contact</a></li>
+          <li><a href="#my-works">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -31,7 +34,9 @@
         <p>AWS Certified Devops Engineer | Cloud & Devops Enthusiast </p>
       </div>
       <div class="angle-down-icon">
-        <a href="#about"><i class="fas fa-angle-down"></i></a>
+        <a href="#about">
+          <i class="fas fa-angle-down"></i>
+        </a>
       </div>
     </div>
   </header>
@@ -39,19 +44,22 @@
     <div class="container">
       <div class="about-content">
         <div class="left-content">
-          <div>
-           <h1 class="about-heading">About Me</h1>
-          </div> 
-          <img src="https://i.postimg.cc/Hx4nChpH/fbavatar-1630400663387-6838396024049256103.png" alt="image" />
-          <p>
-            Hey there! I'm Karthik, bringing three years of hands-on expertise in AWS Cloud, DevOps methodologies, Linux, CI/CD, Kubernetes, Docker, and Terraform. Specializing in architecting scalable and resilient infrastructures, I'm passionate about delivering top-tier solutions aligned with industry best practices.
-          </p>
-          <div class="work-arrow">
-            <p>
-              <a href="#my-works">Check out my work <i class="fas fa-arrow-down"></i></a>
-            </p>
+          <div class="about-header">
+            <!-- Profile Picture -->
+            <div class="profile-pic">
+              <img src="New_Profile_Pic.png" alt="Profile Picture">
+            </div>
+        
+            <!-- About Me Content -->
+            <div class="about-info">
+              
+              <p>
+                I'm a dedicated AWS Cloud and DevOps Engineer with 3.6 years of hands-on experience in architecting, deploying, and managing scalable cloud solutions. My expertise lies in leveraging AWS services to optimize infrastructure, automate workflows, and enhance application performance. I'm passionate about streamlining processes, improving efficiency, and delivering reliable cloud solutions. I'm committed to staying up-to-date with the latest trends and technologies in the cloud and DevOps space. I'm excited about the opportunity to collaborate with talented teams and work on challenging projects that push the boundaries of innovation.
+              </p>
+            </div>
           </div>
         </div>
+        
         <div class="skills">
           <div class="right-content">
             <div>
@@ -104,73 +112,121 @@
       </div>
     </div>
  </section>
-  <section id="my-works">
-    <div class="portfolio">
-      <div class="proj-heading">
-        <h1>Portfolio</h1>
-      </div>
-      <div class="portfolio-content container">
-        <div class="proj-1">
-          <img src="ci-cd.png">
-          <div class="proj1-details">
-            <i class="fab fa-aws"></i>
-            <i class="fas fa-laptop-code"></i>
-            <i class="fas fa-tools"></i> 
-            <h2>Automate Your Deployments:</h2>
-            <p>Building a Robust CI/CD Pipeline for Application Releases</p>
-            <button><a href="https://github.com/bvskarthik18/CI-CD/blob/main/README.md" target="blank">View source <i
-              class="fas fa-external-link-alt"></i></a>
-            </button>
-            <button><a href="https://medium.com/@karthikkartik25/automate-your-deployments-building-a-robust-ci-cd-pipeline-for-application-releases-fc67778f6cc6" target="blank">View Blog <i
-              class="fas fa-external-link-alt"></i></a>
-          </button>
-          </div>
-        </div>
-        
-        <div class="proj-2">
-          <img src="terraform-aws.png">
-          <div class="proj2-details">
-            <i class="fab fa-aws"></i>
-            <i class="fas fa-laptop-code"></i>
-            <i class="fas fa-cogs"></i> 
-            <h2>Level Up Your Infrastructure: </h2>
-            <p>Implementing Multi-Tier AWS Architecture with Terraform</p>
-            <h1>Coming Soon</h1></h1>
-            <button><a href="" target="blank">View source <i
-              class="fas fa-external-link-alt"></i></a>
-            </button>
-            <button><a href="" target="blank">View Blog <i
-              class="fas fa-external-link-alt"></i></a>
-          </button>
-          </div>
-          
-        </div>
-      </div>
+ <section id="my-works">
+  <div class="projects">
+    <div class="proj-heading">
+      <h1>Projects</h1>
     </div>
-  </section>
-  <div class="contact" id="contact-me">
-    <div class="container">
-      <div class="contact-content">
-        <h2>Contact Me</h2>
-        <p class="mail">
-          Get in touch with me on 
-          <a href="mailto:bvskarthik18@gmail.com" target="blank"><i class="fab fa-google" style="color: lightblue;"></i> Mail</a>
-          <a href="https://wa.me/7036940280" class="text-white hover:text-gray-400 mr-8">
-              <i class="fab fa-whatsapp" style="color: lightblue;"></i> WhatsApp
-          </a>
-          <a href="https://t.me/bvskarthik18" target="_blank"><i class="fab fa-telegram" style="color: skyblue;"></i> Telegram</a>
-      </p>
-            
-        <p class="links">Or find me on:</p>
-        
-        <a href="https://www.linkedin.com/in/bvs-karthik-70a5821b5/" target="blank"><i class="fab fa-linkedin">
-            Linkedin</i></a>
-        <a href="https://github.com/bvskarthik18" target="blank"><i class="fab fa-github"></i> Github</a>
-        
+    <div class="projects-content container">
+      <!-- Project 1 -->
+      <div class="proj-box">
+        <div class="proj-info">
+          <h2>Automate Your Deployments</h2>
+          <p><strong>Description:</strong> Building a robust CI/CD pipeline for application releases using Jenkins, GitHub Actions, and Docker.</p>
+          <p><strong>Tools/Technologies:</strong> AWS, Docker, Jenkins, GitHub Actions, Terraform</p>
+          <div class="proj-links">
+            <button><a href="https://github.com/bvskarthik18/CI-CD/blob/main/README.md" target="_blank">View Source Code</a></button>
+            <button><a href="https://medium.com/@karthikkartik25/automate-your-deployments-building-a-robust-ci-cd-pipeline-for-application-releases-fc67778f6cc6" target="_blank">View Blog</a></button>
+          </div>
+        </div>
+      </div>
 
+      <!-- Project 2 -->
+      <div class="proj-box">
+        <div class="proj-info">
+          <h2>Multi-Tier Web Application on AWS</h2>
+          <p><strong>Description:</strong> Multi-Tier Web Application on AWS with Terraform and Docker with HTTP/HTTPS load balancing.</p>
+          <p><strong>Tools/Technologies:</strong> AWS, Terraform, Docker, Networking, HTTP/HTTPS</p>
+          <div class="proj-links">
+            <button><a href="#" target="_blank">View Source Code</a></button>
+            <button><a href="#" target="_blank">View Blog</a></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="proj-box">
+        <div class="proj-info">
+          <h2>CI/CD Pipeline with AWS EKS</h2>
+          <p><strong>Description:</strong> CI/CD pipeline that automatically builds, tests, and deploys a containerized application to AWS EKS </p>
+          <p><strong>Tools/Technologies:</strong> AWS, Terraform, EC2, VPC, S3, IAM</p>
+          <div class="proj-links">
+            <button><a href="#" target="_blank">View Source Code</a></button>
+            <button><a href="#" target="_blank">View Blog</a></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="proj-box">
+        <div class="proj-info">
+          <h2>Level Up Your Infrastructure</h2>
+          <p><strong>Description:</strong> Automated Infrastructure Provisioning using Terraform and AWS CloudFormation (CFT)</p>
+          <p><strong>Tools/Technologies:</strong> Terraform, AWS CFT, Networking</p>
+          <div class="proj-links">
+            <button><a href="#" target="_blank">View Source Code</a></button>
+            <button><a href="#" target="_blank">View Blog</a></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="proj-box">
+        <div class="proj-info">
+          <h2>Serverless Architecture</h2>
+          <p><strong>Description:</strong> Serverless Application with AWS Lambda, API Gateway, and DynamoDB</p>
+          <p><strong>Tools/Technologies:</strong> AWS, Python, API Gateway, Networking</p>
+          <div class="proj-links">
+            <button><a href="#" target="_blank">View Source Code</a></button>
+            <button><a href="#" target="_blank">View Blog</a></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="proj-box">
+        <div class="proj-info">
+          <h2>Prometheus and Grafana</h2>
+          <p><strong>Description:</strong> Efficiently monitor your Kubernetes cluster and applications with Prometheus and Grafana.</p>
+          <p><strong>Tools/Technologies:</strong> Prometheus, Grafana, Kubernetes, Networking </p>
+          <div class="proj-links">
+            <button><a href="https://github.com/bvskarthik18/CI-CD/blob/main/README.md" target="_blank">View Source Code</a></button>
+            <button><a href="https://medium.com/@karthikkartik25/automate-your-deployments-building-a-robust-ci-cd-pipeline-for-application-releases-fc67778f6cc6" target="_blank">View Blog</a></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section id="contact">
+  <div class="container">
+    <!-- Contact Section Heading -->
+    <h2 class="contact-heading">Contact</h2>
+
+    <div class="contact-info">
+      <!-- Address Box -->
+      <div class="info-box address" id="my-address">
+        <h3><i class="fas fa-map-marker-alt"></i> My Address</h3> <!-- Location pin icon -->
+        <p>KPHB Colony</p>
+        <p>Hyderabad</p>
+        <p>Telangana, India</p>
+      </div>
+
+      <!-- Social Profiles Box -->
+      <div class="info-box social-profiles">
+        <h3><i class="fas fa-share-alt"></i> Social Profiles</h3> <!-- Share icon -->
+        <div class="social-icons">
+          <a href="mailto:bvskarthik@outlook.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+          <a href="https://github.com/bvskarthik18" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/bvs-karthik-70a5821b5" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        </div>
       </div>
     </div>
   </div>
+</section>
+
+
   
   <script type="text/javascript">
     $(document).ready(function () {
@@ -217,7 +273,7 @@
 
 <footer class="footer">
   <div class="container">
-      <p>&copy; 2023 BVS KARTHIK. All Rights Reserved.</p>
+      <p>&copy; 2024 BVS KARTHIK. All Rights Reserved.</p>
   </div>
 </footer>
 
